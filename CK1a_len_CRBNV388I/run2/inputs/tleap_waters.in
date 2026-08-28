@@ -1,0 +1,11 @@
+source leaprc.water.tip3p
+
+# Load protein and bond Zn to relevant CYM residues
+waters = loadpdb pdbs/waters.pdb # Load the PDB file
+
+# Save the parameter and coordinate files
+saveAmberParm waters waters.prm7 waters.rst7
+saveAmberParm waters waters.parm7 waters.rst7
+
+quit 
+

@@ -1,0 +1,12 @@
+source leaprc.protein.ff19SB
+
+# Load protein and bond Zn to relevant CYM residues
+protein = loadpdb pdbs/CK1a.pdb # Load the PDB file
+
+# Save the parameter and coordinate files
+saveAmberParm protein CK1a.prm7 CK1a.rst7
+saveAmberParm protein CK1a.parm7 CK1a.rst7
+
+quit 
+
+
